@@ -12,4 +12,13 @@ model User {
   name     String
   email    String  @unique
   password String
+  posts    Post[]  // One-to-many relationship with Post
+}
+
+model Post {
+  id          Int    @id @default(autoincrement())
+  description String
+  title       String
+  userId      Int    // Foreign key to reference User model
+  user        User   @relation(fields: [userId], references: [id])
 }
