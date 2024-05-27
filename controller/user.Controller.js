@@ -1,4 +1,3 @@
-// Importing necessary libraries
 import jwt from 'jsonwebtoken'; // Library for JSON Web Tokens
 import bcrypt from 'bcryptjs'; // Library for password hashing
 import { PrismaClient } from '@prisma/client'; // Prisma client for database operations
