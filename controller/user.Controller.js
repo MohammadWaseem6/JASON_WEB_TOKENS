@@ -8,7 +8,7 @@ const prisma = new PrismaClient();
 // Secret key for JWT signing
 const SECRET_KEY = 'secret';
 
-// Function to register a new user
+// Function to register a new USER
 export const register = async (req, res) => {
     // Extracting name, email, and password from request body
     const { name, email, password } = req.body;
